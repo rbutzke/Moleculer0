@@ -10,13 +10,14 @@ module.exports = {
         ip: "0.0.0.0",
         routes: [
             {
-                path: "api",
+                path: "/api",
+
                 aliases: {
-                    "GET food: ": "food.get"
+                    "GET food":"food.get"
                 },
                 //whitelist: ["**"],
                 logging: true
-            }
-        ]
-    }
-}
+            },
+        ],
+    },
+};
