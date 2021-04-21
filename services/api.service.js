@@ -13,7 +13,8 @@ module.exports = {
                 path: "/api",
 
                 aliases: {
-                    "GET food":"food.get"
+                    "GET food":"food.get",
+                    "GET food/categories": "food.categories"
                 },
                 //whitelist: ["**"],
                 logging: true
