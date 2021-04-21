@@ -1,0 +1,18 @@
+{
+  "name": "moleculer0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services/**/*.service.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moleculer": "^0.14.13",
+    "moleculer-repl": "^0.6.4",
+    "moleculer-web": "^0.10.0-beta2"
+  }
+}
