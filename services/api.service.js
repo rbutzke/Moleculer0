@@ -4,14 +4,17 @@ const ApiGateway = require("moleculer-web")
 
 module.exports = {
     name: "api",
-    mixins: { ApiGateway },
+    mixins: [ ApiGateway ],
     settings: {
-        port: process.env.PORT || 3000,
+        port: 3000,
         ip: "0.0.0.0",
         routes: [
             {
                 path: "api",
-                whitelist: ["**"],
+                aliases: {
+                    "GET food: ": "food.get"
+                },
+                //whitelist: ["**"],
                 logging: true
             }
         ]
